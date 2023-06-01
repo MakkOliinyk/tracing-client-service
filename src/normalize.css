@@ -468,3 +468,12 @@ template {
 * {
     box-sizing: border-box;
 }
+
+.vis-network {
+    overflow: visible;
+}
+
+.vis-tooltip {
+    position: absolute;
+    z-index: 10;
+}
