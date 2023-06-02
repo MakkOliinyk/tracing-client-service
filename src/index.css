@@ -52,7 +52,7 @@ body {
 }
 
 body {
-  --backgroundColor: #eceff1;
+  --backgroundColor: #f1f0ec;
 
   --redDarker: #c5170a;
   --redDark: #f01c0d;
@@ -84,6 +84,7 @@ body {
   --blue: #2196f3;
   --blueLight: #42a5f4;
   --blueLighter: #79c0f7;
+  --blueLightest: #d0e7ff;
 
   --yellowDarker: #dbc500;
   --yellowDark: #ffe60b;
