@@ -5,11 +5,13 @@ import './App.css';
 import './index.css';
 import './normalize.css';
 
+import Home from "./pages/Home";
+
 const App = () => {
   return (
       <Router>
         <Routes>
-            <Route path="/" element={<div>HELLO!</div>} />
+            <Route path="/" element={<Home />} />
         </Routes>
       </Router>
   );
