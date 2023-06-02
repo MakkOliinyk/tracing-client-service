@@ -1,4 +1,4 @@
-import { SERVICE_NAMES } from "../utils/serviceNames";
+import {getServiceName} from "../utils/serviceNames";
 
 export class Graph {
     constructor() {
@@ -114,7 +114,7 @@ export class LogsGraph extends Graph {
                 return {
                     ...node,
                     id: node.id,
-                    label: SERVICE_NAMES[node.id],
+                    label: getServiceName(node.id),
                     color: {
                         background: color,
                         border: `${color}60`,
