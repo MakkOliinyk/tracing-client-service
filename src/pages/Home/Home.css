@@ -1,0 +1,84 @@
+.base {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    gap: var(--spacingBase);
+    padding: var(--spacingBase);
+    background-color: var(--backgroundColor);
+}
+
+.graph {
+    background-color: var(--white);
+    height: 100%;
+    width: 60%;
+    border: 1px solid var(--bordersColor);
+    box-shadow: var(--boxShadowEnhanced);
+    padding: var(--spacingSmall);
+}
+
+.logs {
+    background-color: var(--white);
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+    overflow-y: auto;
+    border: 1px solid var(--bordersColor);
+    box-shadow: var(--boxShadowEnhanced);
+    padding: var(--spacingSmall);
+}
+
+.logContainer {
+    margin-bottom: 2px;
+}
+.logContainer:hover {
+    background-color: var(--blueLightest);
+}
+
+.logInfo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacingSmall);
+}
+
+.tagsContainer {
+    display: flex;
+    gap: var(--spacingExtraSmall);
+}
+
+.timeTag {
+    padding: 2px var(--spacingExtraSmall);
+    background-color: var(--grayLighter);
+    width: 100px;
+}
+
+.statusTag {
+    padding: 2px var(--spacingExtraSmall);
+    background-color: var(--greenLighter);
+    width: 40px;
+}
+.errorStatus {
+    background-color: var(--redLight);
+}
+
+.requestTag {
+    padding: 2px var(--spacingExtraSmall);
+    background-color: var(--purpleLightest);
+    width: 60px;
+}
+
+.logTitle {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logBody {
+    display: none;
+}
+.logBody.open {
+    display: block;
+}
